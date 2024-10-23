@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #F5F5F7;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px 30px 20px 30px;
+}
+
+
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+} 
+
+    ul, li {
+    list-style: none;
+    }
+
+    a {
+    text-decoration: none;
+    color: #000000;
+    }
+
+    .navegacao {
+        display: flex;
+        justify-content: center;
+    }
+
+.cabecalho__logo {
+    display: flex;
+    gap: 20px;
+}
+
+.cabecalho__img {
+    flex: none;
+}
+
+.cabecalho__titulo  {
+    flex: none;
+}
+
+
+/* ------------------------------ Seção Apresentação ------------------------------*/
+.apresentacao {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+
+}
+
+.apresentacao__foto {
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+}
+
+.apresentacao__conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.redes {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+  }
+  
+  .redes__elemento a {
+    display: flex;
+    align-items: baseline;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+.sobre-mim {
+    background-color:#EAF2FD;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+    gap: 30px;
+}
+
+.sobre-mim__assinatura {
+    height: 70px;
+    width: 100px;
+}
+
+
+/*------------------------------ Seção de Habilidades ------------------------------*/
+.habilidades {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+    gap: 30px;
+    }
+    .habilidades__lista {
+        display: flex;
+        align-items: baseline;
+        text-align: center;
+        gap: 20px;
+
+    }
+
+    .habilidades__icone {
+        height: 45px;
+        width: 45px;
+    }
+
+
+
+/*------------------------------ Seção de Hobbies --------------------------------*/
+.hobbies {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+    gap: 30px;
+    
+    }
+
+    .hobbies__titulo {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hobbies__lista {
+        display: flex;
+        align-items: baseline;
+        text-align: center;
+        gap: 20px;
+    }
+
+/*-------------------------------Seção formação acadêmica--------------------------*/
+.formacao {
+    background-color:#EAF2FD;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+    gap: 30px;
+    }
+
+    .formacao__lista {
+        display: flex;
+        align-items: baseline;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .detalhes__formacao {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+/*------------------------------ Seção de Projetos --------------------------------*/
+.projetos {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+    gap: 30px;
+    }
+
+    .projetos__conteiner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .projeto__demonstacao {
+        height: 426px;
+        width: 772px;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+/*------------------------------ Seção de Contato ---------------------------------*/
+.contato {
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+    gap: 30px; }
+
+    .contato__formulario {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+/*------------------------------- Rodapé -----------------------------------------------*/
+.rodape {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    background-color:#EAF2FD;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+}
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Tablets e telas maiores */
+@media (min-width: 834px) {
+    .cabecalho {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .cabecalho__logo {
+        max-width: 100%;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Telas grandes */
+@media (min-width: 1024px) {
+
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+}
